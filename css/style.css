@@ -63,6 +63,13 @@ h5 {
 
 }
 
+h6 {
+  color: #add8e6;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 10px;
+}
 
 .date-text {
   font-style: italic;
