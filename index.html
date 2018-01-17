@@ -87,9 +87,10 @@
 				</ul>
 				<ul>
 				</ul>
+					<p>Background: Follows your mouse | Press the spacebar to pause</p>
 			</div>
-			<p id="sizes">Background: Too many? Too litte?<br/>Try <span id="size-options" ></span> <br/> Follows your mouse | Press the spacebar to pause</p>
-			<p id="closeBtn">Continue</p>
+			<p id="sizes" class="hidden">Background: Too many? Too litte?<br/>Try <span id="size-options" ></span> 
+			<div id="closeBtn"><a href="index2.html">Enter The Site</a></div>
 		</div>
 	</div>
 
@@ -584,10 +585,10 @@ void main() {
 </script>
 
 <script>
-document.getElementById( 'closeBtn' ).addEventListener( 'click', function() {
-	document.getElementById( 'intro' ).classList.add( 'hidden' );
-	document.getElementById( 'minIntro' ).classList.remove( 'hidden' );
-} );
+// document.getElementById( 'closeBtn' ).addEventListener( 'click', function() {
+// 	document.getElementById( 'intro' ).classList.add( 'hidden' );
+// 	document.getElementById( 'minIntro' ).classList.remove( 'hidden' );
+// } );
 document.getElementById( 'closeBtn2' ).addEventListener( 'click', function() {
 	document.getElementById( 'minIntro' ).classList.add( 'hidden' );
 	document.getElementById( 'volunteer' ).classList.remove( 'hidden' );
