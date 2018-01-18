@@ -87,12 +87,14 @@ var volunteers = {
 
 for (volunteer in volunteers.volunteers) {
 	$("#volunteerExperience").append(HTMLvolunteerStart);
-	var formattedEmployer = HTMLvolunteerEmployer.replace("%data%", volunteers.volunteers[volunteer].title);
+	var formattedEmployer = HTMLvolunteerEmployer.replace("%data%", volunteers.volunteers[volunteer].employer);
 	var formattedTitle = HTMLvolunteerTitle.replace("%data%", volunteers.volunteers[volunteer].title);
 	var formattedEmployerTitle = formattedEmployer + formattedTitle;
 	$(".volunteer-entry:last").append(formattedEmployerTitle);
 	var formattedDates = HTMLvolunteerDates.replace("%data%", volunteers.volunteers[volunteer].dates);
 	$(".volunteer-entry:last").append(formattedDates);
+	var formattedlocation = HTMLvolunteerLocation.replace("%data%", volunteers.volunteers[volunteer].location);
+	$(".volunteer-entry:last").append(formattedlocation);
 	var formattedDescription = HTMLvolunteerDescription.replace("%data%", volunteers.volunteers[volunteer].description);
 	$(".volunteer-entry:last").append(formattedDescription);
 }
@@ -130,6 +132,8 @@ for (job in work.jobs) {
 	$(".work-entry:last").append(formattedEmployerTitle);
 	var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
 	$(".work-entry:last").append(formattedDates);
+	var formattedlocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+	$(".work-entry:last").append(formattedlocation);
 	var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 	$(".work-entry:last").append(formattedDescription);
 }
