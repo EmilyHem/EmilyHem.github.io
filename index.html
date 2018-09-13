@@ -1,18 +1,17 @@
  <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
- 
- <style>
- body {
+
+<style>
+  body {
     font-family: "Century Gothic", 'Lato', sans-serif;
-}
+  }
 
-a {
-  text-decoration: none;
-}
+  a {
+    text-decoration: none;
+  }
 
-.et-hero-tabs,
-.et-slide {
+  .et-hero-tabs, .et-slide {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,36 +20,42 @@ a {
     position: relative;
     background: #eee;
     text-align: center;
-    padding: 0 2em;
-    h1 {
-        font-size: 2rem;
-        margin: 0;
-        letter-spacing: 1rem;
-    }
-    h3 {
-        font-size: 1rem;
-        letter-spacing: 0.3rem;
-        opacity: 0.6;
-    }
-}
+  }
 
-.et-hero-tabs-container {
+  .et-hero-tabs {
+    background-image: url(./images/banner.jpg);
+  }
+
+  .et-hero-tabs h1, .et-slide h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+  }
+
+  .et-hero-tabs h3, .et-slide h3 {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+  }
+
+  .et-hero-tabs-container {
     display: flex;
     flex-direction: row;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 70px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
     background: #fff;
     z-index: 10;
-    &--top {
-        position: fixed;
-        top: 0;
-    }
-}
+  }
 
-.et-hero-tab {
+  .et-hero-tabs-container--top {
+    position: fixed;
+    top: 0;
+
+  }
+  .et-hero-tab {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,74 +64,164 @@ a {
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
     font-size: 0.8rem;
-    &:hover {
-      color:white;
-      background: rgba(102,177,241,0.8);
-      transition: all 0.5s ease;
-    }
-}
+  }
 
-.et-hero-tab-slider {
+  .et-hero-tab:hover {
+    color: white;
+    background: rgb(102, 177, 241, 0.8);
+    transition: all 0.5s ease;
+  }
+
+  .et-hero-tab-slider {
     position: absolute;
     bottom: 0;
     width: 0;
     height: 6px;
-    background: #66B1F1;
+    background: #66b1f1;
     transition: left 0.3s ease;
-}
+  }
 
-@media (min-width: 800px) {
-  .et-hero-tabs,
-  .et-slide {
-    h1 {
-        font-size: 3rem;
+  @media (min-width: 800px) {
+    .et-hero-tabs h1, .et-slide h1 {
+      font-size: 3rem;
     }
-    h3 {
-        font-size: 1rem;
+    .et-hero-tabs h3, .et-slide h3 {
+      font-size: 1rem;
+    }
+    .et-hero-tab {
+      font-size: 1rem;
     }
   }
-  .et-hero-tab {
-    font-size: 1rem;
+
+  #slideshow {
+    position: absolute;
+    width: 65%;
+    height: 65%;
   }
-}
+
+  #slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  img {
+    max-width: 65%; 
+    max-height: 65%;
+  }
+
+  h3{
+    line-height: 1.5
+  }
 </style>
 
-
-  <!-- Title -->
+  <title>Emily Hem</title>
+  <!-- Front -->
   <section class="et-hero-tabs">
-    <h1>STICKY SLIDER NAV</h1>
-    <h3>Sliding content with sticky tab nav</h3>
+    <h1>Emily Hem</h1>
+    <h3><span style="background-color: #FFF">1B Computer Engineering</span></h3>
     <div class="et-hero-tabs-container">
-      <a class="et-hero-tab" href="#tab-es6">ES6</a>
-      <a class="et-hero-tab" href="#tab-flexbox">Flexbox</a>
-      <a class="et-hero-tab" href="#tab-react">React</a>
-      <a class="et-hero-tab" href="#tab-angular">Angular</a>
-      <a class="et-hero-tab" href="#tab-other">Other</a>
+      <a class="et-hero-tab" href="#tab-skills">Skills</a>
+      <a class="et-hero-tab" href="#tab-projects">Projects</a>
+      <a class="et-hero-tab" href="#tab-experience">Experience</a>
+      <a class="et-hero-tab" href="#tab-education">Education</a>
+      <a class="et-hero-tab" href="#tab-contact">Contact</a>
       <span class="et-hero-tab-slider"></span>
     </div>
   </section>
 
   <!-- Main -->
   <main class="et-main">
-    <section class="et-slide" id="tab-es6">
-      <h1>ES6</h1>
-      <h3>something about es6</h3>
+    <section class="et-slide" id="tab-skills">
+      <h1>Skills</h1>
+      <h3>Languages: C++ | C | Python | HTML/CSS | JavaScript | PowerShell | AutoIT
+      <br>
+      <br>
+      Operating systems: Windows | Mac OS | Linux</h3>
     </section>
-    <section class="et-slide" id="tab-flexbox">
-      <h1>Flexbox</h1>
-      <h3>something about flexbox</h3>
+    <section class="et-slide" id="tab-projects">
+      <h1>Projects</h1>
+      <h3>
+        <li><em>Save the Day “Disaster League” - Waterloo Semi-Finalist</em>, Hult Prize 2018</li>
+        <br>
+        <li><em>Search Engine – Intro to Computer Science</em>, Udacity.com</li>
+        <br>
+        <li><em>EnableU - Best IoT Hack</em>, StarterHacks 2018</li>
+        
+        <div id="slideshow">
+      <!-- image 1 -->
+         <div>
+           <img src="./images/1.jpg">
+         </div>
+      <!-- image 2 -->
+         <div>
+           <img src="./images/2.jpg">
+         </div>
+      <!-- image 3 -->
+         <div>
+           <img src="./images/3.jpg">
+         </div>
+      <!-- image 4 -->
+         <div>
+           <img src="./images/4.jpg">
+         </div>
+      <!-- image 5 -->
+         <div>
+           <img src="./images/5.jpg">
+         </div>
+      <!-- image 6 -->
+         <div>
+           <img src="./images/6.jpg">
+         </div>
+      <!-- image 7 -->
+         <div>
+           <img src="./images/7.jpg">
+         </div>
+      </div>
+
+      <script>
+      $("#slideshow > div:gt(0)").hide();
+
+      setInterval(function() {
+        $('#slideshow > div:first')
+          .fadeOut(1000)
+          .next()
+          .fadeIn(1000)
+          .end()
+          .appendTo('#slideshow');
+      }, 2000);
+      </script>
+
+
     </section>
-    <section class="et-slide" id="tab-react">
-      <h1>React</h1>
-      <h3>something about react</h3>
+
+    <section class="et-slide" id="tab-experience">
+      <h1>Experience</h1>
+      <h3><li><em>Computing Assistant</em> - University of Waterloo</li>
+      <br>
+      <br>  
+      <em><li>Confirmation Supervisor</em> -  Heart and Stroke Foundation</li>
+      <br>
+      <br>
+      <em><li>Engineering Ambassador</em> - University of Waterloo</li>
+      <br>
+      <br>
+      <em><li>Cashier</em> - Shoppers Drug Mart</li>
+      </h3>
     </section>
-    <section class="et-slide" id="tab-angular">
-      <h1>Angular</h1>
-      <h3>something about angular</h3>
+    <section class="et-slide" id="tab-education">
+      <h1>Education</h1>
+      <h3><li><em>Candidate for Bachelor of Applied Science, Computer Engineering</em><br>
+      University of Waterloo - Expected Graduation 2023</li>
+      <br><br>
+      <li><em>International Baccalaureate Diploma</em> - Cameron Heights Collegiate Institute</li>
+      </h3>
     </section>
-    <section class="et-slide" id="tab-other">
-      <h1>Other</h1>
-      <h3>something about other</h3>
+    <section class="et-slide" id="tab-contact">
+      <h1>Contact</h1>
+      <h3>Email: eshem@edu.uwaterloo.ca</h3>
     </section>
   </main>
 
