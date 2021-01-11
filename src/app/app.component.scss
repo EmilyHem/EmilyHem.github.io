@@ -1,0 +1,41 @@
+.projects {
+	display: flex;
+	margin: 82px auto 32px;
+	padding: 0 16px;
+	max-width: 960px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.landing-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.name {
+  color: #FFF;
+  position: relative;
+  text-align: center;
+  font-family: 'Fredericka the Great', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7vw;
+  z-index: 2;
+  text-shadow: 0.1em 0.1em 0.3em #888, 0.1em 0.1em 2em #eee ;
+}
+
+.about-section {
+  background-color: #000000;
+  color: #FFF;
+  padding: 2em;
+}

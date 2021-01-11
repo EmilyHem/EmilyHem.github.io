@@ -1,0 +1,52 @@
+.mat-dialog-actions {
+    justify-content: center;
+}
+
+.mat-dialog-title {
+    font-family: 'Fredericka the Great', serif;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 16px;
+    overflow: auto;
+    height: 100%;
+    padding: 8px;
+}
+
+.video {
+    margin-bottom: 16px;
+}
+
+.pic {
+    margin-bottom: 16px;
+    width: 50vw;
+    height: 40vh;
+}
+
+.responsive-iframe {
+    width: 30vw;
+    height: 30vh;
+}
+
+.description {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.technologies {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.github {
+    width: 64px;
+    height: 64px;
+}

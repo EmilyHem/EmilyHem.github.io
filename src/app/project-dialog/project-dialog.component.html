@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>{{ data.project.name }}</h1>
+<div mat-dialog-content class="content">
+    <div *ngIf="data.project.ytLink" class="video">
+        <iframe
+            class="responsive-iframe"
+            [src]="data.project.ytLink"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        >
+        </iframe>
+    </div>
+    <div *ngIf="data.project.pic" class="pic">
+        <img src="../../assets/{{data.project.pic}}">
+    </div>
+    <div class="description" [innerHTML]="data.project.description"></div>
+    <div class="technologies">
+        <h2>Technologies Used:</h2>
+        <ul>
+            <div *ngFor="let technology of data.project.technologies">
+                <li>{{ technology }}</li>
+            </div>
+        </ul>
+    </div>
+    <div *ngIf="data.project.githubLink">
+        <a [href]="data.project.githubLink" target="_blank" rel="noopener">
+            <img class="github" src="../../assets/github.png">
+        </a>
+    </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button mat-dialog-close color="accent" class="button">Close</button>
+</div>
