@@ -31,7 +31,8 @@
   font-weight: 400;
   font-size: 7vw;
   z-index: 2;
-  text-shadow: 0.1em 0.1em 0.3em #888, 0.1em 0.1em 2em #eee ;
+  text-shadow: 0.1em 0.1em 0.3em #888, 0.1em 0.1em 2em #eee;
+  pointer-events: none;
 }
 
 .about-section {
