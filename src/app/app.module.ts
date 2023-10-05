@@ -10,6 +10,7 @@ import { NgParticlesModule } from 'ng-particles';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectDialogComponent } from './project-dialog/project-dialog.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     NgParticlesModule,
     MatDialogModule,
     MatButtonModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

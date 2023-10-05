@@ -1,18 +1,13 @@
-<section id="projects">
-  <div class="project-container">
-    <a class="project" (click)="openDialog('Midnight Tempo')">
-      <img src="../../assets/midnightTempo.gif">
-      <div class="info">
-        <span>Midnight Tempo</span>
-        <div class="type">Unity Game (Desktop)</div>
-      </div>
-    </a>
-    <a class="project" (click)="openDialog('EnableU')">
-      <img src="../../assets/EnableU.png">
-      <div class="info">
-        <span>EnableU</span>
-        <div class="type">StarterHacks 2018</div>
-      </div>
-    </a>
-  </div>
+<section id="projects" style="background-color: black;">
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile class="project-container" *ngFor="let project of projectList">
+        <a class="project" (click)="openDialog(project.name)">
+          <img src={{project.thumbnail}}>
+          <div class="info">
+            <span>{{project.name}}</span>
+            <div class="type">{{project.type}}</div>
+          </div>
+        </a>
+    </mat-grid-tile>
+  </mat-grid-list>
 </section>

@@ -19,5 +19,6 @@ export class ProjectDialogComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    gtag('event', 'project_' + this.data.project.name.replace(/\s+/g, '_'))
   }
 }

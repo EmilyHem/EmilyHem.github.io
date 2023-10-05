@@ -1,16 +1,11 @@
 .project-container {
 	background-color: #000000;
-	display: flex;
-	flex-wrap: wrap;
 }
 
 .project-container .project {
-	position: relative;
-	flex: 0 1 50%;
-	width: 50%;
-	min-width: 400px;
-	height: 50vh;
 	cursor: pointer;
+	width: 100%;
+	height: auto;
 }
 
 .project-container .project .info {
